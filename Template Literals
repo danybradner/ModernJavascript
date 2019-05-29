@@ -1,0 +1,25 @@
+const name = 'Dany';
+const age = 30;
+const job = 'Tester'
+const city = 'Sydney';
+
+let html;
+
+//without template strings (es5)
+html = '<ul>' + 
+'<li>Name: ' + name + '</li>' + 
+'<li> Age:' + age + '</li>' +
+'<li> Job:' + job + '</li>' + 
+'<li> City:' + city + '</li>' +
+''
+
+//with template strings (es6)
+html = `<ul>  
+<li>Name:  ${name} </li>  
+<li> Age:  ${age}  </li>
+<li> Job: ${job}  </li>
+<li> City: ${city}  </li>
+</ul>`
+;
+
+document.body.innerHTML =html; 
